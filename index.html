@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Işıl'a ❤️</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #100609, #350b16, #100609);
+  color: #fff0f2;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.card {
+  max-width: 600px;
+  margin: 35px auto;
+  padding: 28px 22px;
+  background: #1b1015;
+  border: 1px solid #7c2035;
+  border-radius: 24px;
+  box-shadow: 0 0 30px #e21d4530;
+}
+h1 {
+  color: #ff526b;
+  font-size: clamp(32px, 8vw, 48px);
+}
+h2 { color: #ff7185; }
+p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+button {
+  display: inline-block;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 12px auto;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(120deg, #ff526b, #a91431);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:active { transform: scale(.97); }
+.page { display: none; }
+.page.active { display: block; }
+.heart {
+  font-size: 55px;
+  animation: beat 1.5s infinite;
+}
+@keyframes beat {
+  50% { transform: scale(1.15); }
+}
+.small { color: #cbaab2; font-size: 13px; }
+.quote {
+  padding: 18px;
+  margin: 20px 0;
+  background: #30131d;
+  border-left: 3px solid #ff526b;
+  border-radius: 10px;
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+
+<section class="card page active" id="giris">
+  <div class="heart">❤️</div>
+  <h1>Işıl,<br>sana bir şey söylemek istiyorum.</h1>
+  <p>
+    Bazen insanın içinden geçenleri anlatması zor oluyor.
+    Ben de sana içimdekileri anlatmak için küçük bir şey hazırladım.
+  </p>
+  <button onclick="sayfaAc('mektup')">
+    Mektubumu oku 🥀
+  </button>
+  <p class="small">
+    Senden hemen bir cevap beklemiyorum.
+    Sadece içimdekileri bilmeni istiyorum.
+  </p>
+</section>
+
+<section class="card page" id="mektup">
+  <div class="heart">💌</div>
+  <h2>Aşkım, önce özür dilerim…</h2>
+
+  <p>
+    Işıl'ım, yaşanan yanlış anlaşılmanın aramıza böyle
+    bir mesafe koymasını hiç istemezdim. Kendimi anlatmaya
+    çalışırken seni kırdıysam gerçekten özür dilerim.
+  </p>
+
+  <p>
+    Benim amacım seni üzmek ya da kendimi haklı çıkarmak
+    değil. Bazen anlatmak istediğim şeyler yanlış anlaşılabiliyor.
+    Keşke birbirimizi kırmadan, sakince konuşup ne demek
+    istediğimizi anlayabilsek.
+  </p>
+
+  <p>
+    Sana bunları kendimi savunmak için yazmıyorum.
+    Benim için ne kadar değerli olduğunu bilmeni istiyorum.
+    Senin hislerin de benim için önemli ve seni gerçekten
+    dinlemek istiyorum.
+  </p>
+
+  <div class="quote">
+    Ben sana karşı olmak değil, seninle aynı tarafta olmak
+    istiyorum aşkım. Birbirimizi kırmadan, gerçekten anlayarak…
+    ❤️
+  </div>
+
+  <p>
+    Seni seviyorum bitanem. Eğer bir yerde hatam varsa bunu
+    anlamaya ve düzeltmeye hazırım. Benim de ne demek
+    istediğimi 4 ay öncesinin olduğunu anladığını bliyorum.
+  </p>
+
+  <button onclick="sayfaAc('tatlilik')">
+    Bir şey daha var… ❤️
+  </button>
+</section>
+
+<section class="card page" id="tatlilik">
+  <div class="heart">🌹</div>
+  <h2>Işıl'ım, bir şey daha…</h2>
+
+  <p>
+    Sen benim için sıradan biri değilsin.
+    Seninle konuşmak, gülmek ve güzel şeyler paylaşmak
+    benim için çok kıymetli.
+  </p>
+
+  <p>
+    Beni anladığını biliyorum tarihi görüp beni anladığını
+  biliyorum sinirlenmekte haklısın ama lütfen affet daha fazla
+  kırgın küs kalma bana seni çok seviyorum.
+  </p>
+
+  <div class="quote">
+    İyi ki hayatımdasın aşkım. Seni üzmek değil,
+    yüzünü güldüren insan olmak istiyorum. 🖤❤️
+  </div>
+
+  <p>
+    Bu küçük siteyi hazırladım çünkü sana söylemek
+    istediklerim içimde kalmasın istedim.
+  </p>
+
+  <button onclick="sayfaAc('final')">
+    Sana bir şey sorabilir miyim? 🥺
+  </button>
+</section>
+
+<section class="card page" id="final">
+  <div class="heart">❤️‍🩹</div>
+  <h1>Beni affeder misin, Işıl?</h1>
+
+  <p>
+    Seni seviyorum ve aramızın düzelmesini gerçekten
+    istiyorum.
+    Benim için önemli olan birbirimizi anlayabilmemiz.
+  </p>
+
+  <button onclick="sayfaAc('cevap')">
+    Gel, konuşalım aşkım ❤️
+  </button>
+
+  <p class="small">
+    Ne hissediyorsan özgürce söyleyebilirsin.
+    Seni dinlemek istiyorum.
+  </p>
+</section>
+
+<section class="card page" id="cevap">
+  <div class="heart">🫶🏻</div>
+  <h2>İyi ki varsın, Işıl'ım.</h2>
+  <p>
+    Gel, sakin sakin konuşalım.
+    Seni dinleyeceğim, ben de kendimi anlatacağım.
+    Seni kırmak değil, birbirimizi anlamak istiyorum.
+  </p>
+  <p>Seni seviyorum. ❤️</p>
+  <p class="small">Bu küçük sayfa sana özel hazırlandı.</p>
+</section>
+
+<script>
+function sayfaAc(id) {
+  // Önce bütün sayfaları gizle.
+  document.querySelectorAll('.page').forEach(function(sayfa) {
+    sayfa.classList.remove('active');
+  });
+
+  // Ardından seçilen sayfayı aç.
+  var hedef = document.getElementById(id);
+
+  if (hedef) {
+    hedef.classList.add('active');
+
+    // Yeni sayfayı ekranın üstünden göster.
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+}
+</script>
+
+</body>
+</html>
